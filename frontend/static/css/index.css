@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: saddlebrown;
+}
+
+.clicker {
+    font-weight: 700;
+    font-size: 20;
+}
+
+.user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: saddlebrown;
+    z-index: 10;
+}
+
+#user {
+    width: 30px;
+    padding-left: 5px;
+}
+
+.user:hover {
+    filter: brightness(1.4);
+}
+
+.user:hover .logout {
+    display: block;
+}
+
+.username {
+    width: 100px;
+    padding-left: 10px;
+}
+
+.logout {
+    display: none;
+    position: absolute;
+    background-color: saddlebrown;
+    width: 145px;
+    height: 30px;
+    top: 30px;
+    line-height: 25px;
+}
+
+.logout a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}
+
+#counter {
+    color: gold;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100vh;
+    background-image: url("/static/imgs/kamen.jpg");
+    font-size: 20;
+}
+
+.click-container {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vh 0;
+}
+
+.click-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: fit-content;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.click-holder img {
+    height: 100%;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+.boost-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.boost-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid saddlebrown;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #a15106;
+}
+
+.boost {
+    width: 50%;
+    height: 60px;
+    background: tan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.auto {
+    background: rosybrown;
+}
